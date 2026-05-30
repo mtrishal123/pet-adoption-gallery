@@ -1,0 +1,8 @@
+/*
+ * Base styles are handled by styled-components' themed `GlobalStyle`
+ * (see src/theme/GlobalStyle.ts). This file is intentionally minimal and only
+ * carries the web-font declaration fallback.
+ */
+:root {
+  color-scheme: light dark;
+}
