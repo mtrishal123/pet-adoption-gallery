@@ -3,12 +3,7 @@ import { Link } from 'react-router-dom';
 import { Badge, Button, Container } from '../components/ui';
 import { PawIcon } from '../components/icons';
 
-/**
- * "About Me" page.
- *
- * Doubles as a project overview and a short developer bio. Personalise the
- * bio section below with your own details before submitting.
- */
+
 export function AboutPage() {
   return (
     <Container>
@@ -56,14 +51,12 @@ export function AboutPage() {
           </List>
         </Section>
 
-        {/* TODO: personalise this section with your own bio before submitting. */}
+        
         <Section>
           <h2>About the developer</h2>
           <p>
-            Hi! I’m a front-end developer who enjoys turning fuzzy requirements
-            into polished, accessible interfaces. I built this project to show how
-            I structure state, handle async data, and sweat the small UX details.
-            I’d love to talk through any of the decisions you see here.
+            Hi! I’m Trishal, a Full-Stack Developer who enjoys turning fuzzy requirements
+            into polished, accessible interfaces. I like thinking about problems and most of the time,  I end up going down a rabbit hole of research and prototyping before I find a solution that feels right. If you want to chat about this project or anything else, you can find me on <a href="https://www.linkedin.com/in/trishalvarma/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </p>
         </Section>
 
