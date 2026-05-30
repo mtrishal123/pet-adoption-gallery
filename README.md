@@ -12,7 +12,6 @@ photos to download as a single ZIP.
 
 ## ✨ Features
 
-### Required
 
 | Requirement | Where it lives |
 | --- | --- |
