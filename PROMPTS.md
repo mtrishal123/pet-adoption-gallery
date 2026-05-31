@@ -31,7 +31,7 @@ and TypeScript**, implementing all listed requirements:
 - **Extras to include:** dark/light theme toggle, favorites/adoption shortlist, filters +
   animations, and accessibility + unit tests.
 - **Repo deliverables:** build the app, set up git with clean commits, and maintain this
-  `PROMPTS.md`. (I handle the GitHub push + Loom recording myself.)
+  `PROMPTS.md`.
 
 ## 3. Implementation guidance given throughout
 
