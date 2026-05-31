@@ -73,7 +73,7 @@ serves the dataset at the exact path `GET /pets` in both `dev` and `preview`. It
 small artificial latency so the loading/skeleton states are observable, and matches `/pets`
 *exactly* so client-side routes like `/pets/:id` still fall through to the SPA. The data
 itself ([`src/data/pets.ts`](src/data/pets.ts)) is deterministic and uses real, stable pet
-photos from the `dog.ceo` and `cataas` CDNs.
+photos from the `dog.ceo` and TheCatAPI (`cdn2.thecatapi.com`) CDNs.
 
 ### Data loading
 

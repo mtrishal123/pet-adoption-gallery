@@ -19,7 +19,7 @@ export function Layout() {
         <Container>
           <FooterInner>
             <span>PawfectMatch — a take-home demo gallery.</span>
-            <span>Pet photos via dog.ceo &amp; cataas.</span>
+            <span>Pet photos via dog.ceo &amp; TheCatAPI.</span>
           </FooterInner>
         </Container>
       </Footer>
