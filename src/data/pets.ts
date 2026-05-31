@@ -43,25 +43,23 @@ const DOG_IMAGES: string[] = [
   'https://images.dog.ceo/breeds/ridgeback-rhodesian/n02087394_1352.jpg',
 ];
 
-/** Real, stable cat photos from the cataas CDN, addressed by id. */
-const CAT_IDS: string[] = [
-  '04eEQhDfAL8l5nt3',
-  '05Xd4JtN14983pns',
-  '09wFxpacQzvf9jfM',
-  '0B2g7aTANObiqPJJ',
-  '0C2bQ39x8kuhx31p',
-  '1eGEsddyKNwtBJFP',
-  '1frqP6ajw0JzkR1o',
-  '1gROXVBHMQ8nLxCQ',
-  '1KCTvPEcpY7ryO34',
-  '1LlIgMhb3DfoW4qw',
-  '1N2AH31jiY6N9TYc',
-  '1pV0B3MW24cNSOHg',
-  '1RFXsaXoyCZdplFx',
-  '1t9Z9QMPYhu5gBDV',
+/** Real, stable cat photos from TheCatAPI image CDN (`cdn2.thecatapi.com`). */
+const CAT_IMAGES: string[] = [
+  'https://cdn2.thecatapi.com/images/1qt.jpg',
+  'https://cdn2.thecatapi.com/images/26t.jpg',
+  'https://cdn2.thecatapi.com/images/2bn.jpg',
+  'https://cdn2.thecatapi.com/images/2gh.jpg',
+  'https://cdn2.thecatapi.com/images/2ij.jpg',
+  'https://cdn2.thecatapi.com/images/3eo.jpg',
+  'https://cdn2.thecatapi.com/images/6hr.jpg',
+  'https://cdn2.thecatapi.com/images/73r.jpg',
+  'https://cdn2.thecatapi.com/images/9s7.jpg',
+  'https://cdn2.thecatapi.com/images/a8o.jpg',
+  'https://cdn2.thecatapi.com/images/as7.jpg',
+  'https://cdn2.thecatapi.com/images/b5r.jpg',
+  'https://cdn2.thecatapi.com/images/bar.jpg',
+  'https://cdn2.thecatapi.com/images/blk.jpg',
 ];
-
-const catImage = (id: string): string => `https://cataas.com/cat/${id}?width=800&height=800`;
 
 /** Name pools, indexed deterministically so output never changes between runs. */
 const DOG_NAMES = [
@@ -165,11 +163,11 @@ export const PETS: Pet[] = (() => {
   const dogs = DOG_IMAGES.map((url, i) =>
     makePet(i, 'dog', url, DOG_NAMES[i % DOG_NAMES.length], DOG_BREEDS[i], DOG_BLURBS[i % DOG_BLURBS.length]),
   );
-  const cats = CAT_IDS.map((id, i) =>
+  const cats = CAT_IMAGES.map((url, i) =>
     makePet(
       i,
       'cat',
-      catImage(id),
+      url,
       CAT_NAMES[i % CAT_NAMES.length],
       CAT_BREEDS[i % CAT_BREEDS.length],
       CAT_BLURBS[i % CAT_BLURBS.length],
